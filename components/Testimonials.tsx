@@ -10,13 +10,7 @@ import {
 } from "./ui/carousel";
 
 import { motion } from "framer-motion";
-import {
-  Card,
-  CardContent,
-  CardFooter,
-  CardHeader,
-  CardTitle,
-} from "./ui/card";
+import { Card, CardContent, CardHeader, CardTitle } from "./ui/card";
 import { TestimonialData, testimonialData } from "@/constants/index";
 import Autoplay from "embla-carousel-autoplay";
 
@@ -38,9 +32,12 @@ const Testimonials = () => {
           }),
         ]}
       >
-        <CarouselContent className="flex gap-4">
+        <CarouselContent className="flex gap-4 px-6">
           {testimonialData.map((service, i) => (
-            <CarouselItem key={i} className="pl-1 md:basis-1/2 lg:basis-1/3">
+            <CarouselItem
+              key={i}
+              className="-ml-10 pl-1 md:basis-1/2 lg:basis-1/3"
+            >
               <div className="p-5 h-full flex flex-col">
                 <TestemonialCard service={service}></TestemonialCard>
               </div>
@@ -63,11 +60,9 @@ const TestemonialCard = ({ service }: { service: TestimonialData }) => {
       whileTap={{ scale: 0.95 }}
       className=" h-full"
     >
-      <Card className={`bg-primary p-5 rounded-3xl text-white h-full`}>
+      <Card className={`bg-primary  rounded-3xl text-white h-full`}>
         <CardHeader>
-          <CardTitle
-            className={`text-2xl text-white capitalize text-center py-2`}
-          >
+          <CardTitle className={`text-2xl text-white capitalize text-center `}>
             {service.title}
           </CardTitle>
         </CardHeader>
@@ -75,7 +70,6 @@ const TestemonialCard = ({ service }: { service: TestimonialData }) => {
         <CardContent className="mx-auto text-white">
           {service.description}
         </CardContent>
-        <CardFooter></CardFooter>
       </Card>
     </motion.div>
   );

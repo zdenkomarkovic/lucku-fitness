@@ -23,9 +23,7 @@ import Autoplay from "embla-carousel-autoplay";
 const Testimonials = () => {
   return (
     <div className="py-10 container px-4 mx-auto">
-      <h2 className="text-5xl py-20 text-center text-muted-foreground">
-        Nasa ekipa
-      </h2>
+      <h2 className="text-5xl py-20 text-center text-black">Nasa ekipa</h2>
 
       <Carousel
         className="w-full overflow-hidden"

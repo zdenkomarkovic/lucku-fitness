@@ -26,7 +26,7 @@ const Cardlist = () => {
                   index % 2 === 0 ? "justify-start" : "justify-end"
                 } w-full`}
               >
-                <Card className="  md:w-3/4 shadow-lg md:p-5">
+                <Card className="  md:w-3/4 shadow-lg md:p-5 bg-primary-foreground">
                   <CardHeader>
                     <CardTitle className="font-gagalin flex gap-5 text-2xl md:text-5xl items-center mx-auto text-primary">
                       <span className="text-4xl md:text-8xl">

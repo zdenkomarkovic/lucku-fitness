@@ -21,7 +21,7 @@ import {
 import { TestimonialData, testimonialData } from "@/constants/index";
 import Image from "@/node_modules/next/image";
 
-const Testemonials = () => {
+const Testimonials = () => {
   return (
     <div className="py-10 container px-4 mx-auto">
       <h2 className="text-5xl py-20 text-center text-muted-foreground">
@@ -45,7 +45,7 @@ const Testemonials = () => {
   );
 };
 
-export default Testemonials;
+export default Testimonials;
 
 const TestemonialCard = ({ service }: { service: TestimonialData }) => {
   return (

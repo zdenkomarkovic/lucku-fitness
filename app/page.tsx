@@ -1,6 +1,6 @@
 import Cardlist from "@/components/Cardlist";
 import Hero2 from "@/components/heroOptions/Hero2";
-import Testimonials from "@/components/testimonials";
+import Testimonials from "@/components/Testimonials";
 
 export default function Home() {
   return (

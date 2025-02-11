@@ -15,11 +15,11 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Starter manikam",
+  title: "Lucky fitness",
   description: "starter za izradu sajta manikam",
   icons: {
-    icon: "/manikam.png",
-    apple: "/manikam.png",
+    icon: "/logo.jpg",
+    apple: "/logo.jpg",
   },
   keywords: ["", ""],
 };

@@ -23,7 +23,9 @@ import Autoplay from "embla-carousel-autoplay";
 const Testimonials = () => {
   return (
     <div className="py-10 container px-4 mx-auto">
-      <h2 className="text-5xl py-20 text-center text-black">Nasa ekipa</h2>
+      <h2 className="text-5xl py-20 text-center text-muted-foreground">
+        Nasa ekipa
+      </h2>
 
       <Carousel
         className="w-full overflow-hidden"
@@ -63,12 +65,16 @@ const TestemonialCard = ({ service }: { service: TestimonialData }) => {
     >
       <Card className={`bg-primary p-5 rounded-3xl text-white h-full`}>
         <CardHeader>
-          <CardTitle className={`text-2xl capitalize text-center py-2`}>
+          <CardTitle
+            className={`text-2xl text-white capitalize text-center py-2`}
+          >
             {service.title}
           </CardTitle>
         </CardHeader>
 
-        <CardContent className="mx-auto ">{service.description}</CardContent>
+        <CardContent className="mx-auto text-white">
+          {service.description}
+        </CardContent>
         <CardFooter></CardFooter>
       </Card>
     </motion.div>

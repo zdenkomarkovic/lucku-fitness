@@ -36,7 +36,7 @@ const Cardlist = () => {
                     </CardTitle>
                   </CardHeader>
                   <CardContent className="space-y-6">
-                    <p className=" first-letter:pl-6 text-xl md:text-4xl text-white">
+                    <p className=" first-letter:pl-6 text-xl md:text-4xl">
                       {item.text}
                     </p>
                   </CardContent>

@@ -1,7 +1,7 @@
 "use client";
 
 import Image from "next/image";
-import Logo from "../../public/manikam.png";
+import Logo from "../../public/logo.jpg";
 import Link from "next/link";
 import { ChevronDownIcon, MenuIcon, PhoneIcon } from "lucide-react";
 
@@ -33,7 +33,7 @@ const mobTitleStyles = "text-lg py-2";
 const MobileMenu = () => (
   <Sheet>
     <SheetTrigger className="lg:hidden">
-      <MenuIcon className="text-primary cursor-pointer" />
+      <MenuIcon className="text-primary w-8 h-8 cursor-pointer" />
     </SheetTrigger>
     <SheetContent>
       <SheetHeader>
@@ -93,14 +93,14 @@ const MobileMenu = () => (
 );
 
 const DesktopNav = () => (
-  <ul className="hidden gap-8 lg:flex text-white text-xl">
+  <ul className="hidden gap-8 lg:flex text-xl text-primary">
     {navList.map((item, index) => {
       if (item.list)
         return (
           <HoverCard key={index} openDelay={0} closeDelay={50}>
             <HoverCardTrigger>
               <motion.div
-                whileHover={{ color: "hsl(var(--primary))" }}
+                whileHover={{ color: "hsl(var(--primary))", scale: 1.1 }}
                 className="flex gap-1 transition-colors"
               >
                 {item.title}
@@ -111,7 +111,10 @@ const DesktopNav = () => (
               {item.list.map((link, index2) => (
                 <motion.li
                   key={`${index}.${index2}`}
-                  whileHover={{ backgroundColor: "hsl(var(--primary))" }}
+                  whileHover={{
+                    backgroundColor: "hsl(var(--primary))",
+                    color: "white",
+                  }}
                 >
                   <Link className="px-2 py-2 block" href={link.link}>
                     {link.title}
@@ -157,18 +160,20 @@ export default function Header() {
         scrolled
           ? "bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60 shadow-md"
           : "bg-transparent"
-      }  fixed top-0 left-0 right-0 z-[10] transition-colors`}
+      }  fixed top-0 left-0 right-0 z-50 transition-colors`}
     >
       <nav className="flex items-center justify-between px-8 py-4 max-w-[80rem] w-full">
-        <Link href="/" className="">
-          <Image
-            src={Logo}
-            alt="dm rustic 24"
-            width={50}
-            height={50}
-            className="rounded-full"
-          />
-        </Link>
+        <motion.div whileHover={{ scale: 1.1 }}>
+          <Link href="/" className="">
+            <Image
+              src={Logo}
+              alt="dm rustic 24"
+              width={50}
+              height={50}
+              className="rounded-full"
+            />{" "}
+          </Link>
+        </motion.div>
         <DesktopNav />
         <Link href="tel:+3816">
           <motion.button

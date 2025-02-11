@@ -18,6 +18,7 @@ import {
   CardTitle,
 } from "./ui/card";
 import { TestimonialData, testimonialData } from "@/constants/index";
+import Autoplay from "embla-carousel-autoplay";
 
 const Testimonials = () => {
   return (
@@ -26,11 +27,21 @@ const Testimonials = () => {
         Nasa ekipa
       </h2>
 
-      <Carousel className="w-full flex">
-        <CarouselContent className="-ml-1">
+      <Carousel
+        className="w-full overflow-hidden"
+        opts={{ loop: true }}
+        plugins={[
+          Autoplay({
+            stopOnInteraction: false,
+            stopOnFocusIn: false,
+            delay: 3000,
+          }),
+        ]}
+      >
+        <CarouselContent className="flex gap-4">
           {testimonialData.map((service, i) => (
             <CarouselItem key={i} className="pl-1 md:basis-1/2 lg:basis-1/3">
-              <div className="p-5">
+              <div className="p-5 h-full flex flex-col">
                 <TestemonialCard service={service}></TestemonialCard>
               </div>
             </CarouselItem>
@@ -47,8 +58,12 @@ export default Testimonials;
 
 const TestemonialCard = ({ service }: { service: TestimonialData }) => {
   return (
-    <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
-      <Card className={`bg-primary p-5 rounded-3xl text-white h-[250px]`}>
+    <motion.div
+      whileHover={{ scale: 1.05 }}
+      whileTap={{ scale: 0.95 }}
+      className=" h-full"
+    >
+      <Card className={`bg-primary p-5 rounded-3xl text-white h-full`}>
         <CardHeader>
           <CardTitle className={`text-2xl capitalize text-center py-2`}>
             {service.title}

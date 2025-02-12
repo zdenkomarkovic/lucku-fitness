@@ -8,10 +8,12 @@ export default function BackgroundPaths({
   title,
   img,
   text,
+  text2,
 }: {
   title: string;
   img: string;
-  text: string;
+  text?: string;
+  text2?: string;
 }) {
   const words = title.split(" ");
 
@@ -53,6 +55,11 @@ export default function BackgroundPaths({
             <div className=" text-left">
               <p className="pl-16 font-extrabold text-muted md:text-muted-foreground text-4xl md:text-5xl">
                 {text}
+              </p>
+            </div>
+            <div className=" text-left">
+              <p className="pl-16 font-extrabold text-muted-foreground text-4xl md:text-5xl">
+                {text2}
               </p>
             </div>
           </motion.div>

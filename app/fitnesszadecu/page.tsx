@@ -1,5 +1,6 @@
 import React from "react";
 import Hero2 from "@/components/heroOptions/Hero2";
+import Image from "@/node_modules/next/image";
 
 const page = () => {
   return (
@@ -7,7 +8,7 @@ const page = () => {
       <Hero2
         title={"Fitness za decu"}
         img={"/images/lucky-fitness (5).jpg"}
-        text={"Upis je u toku!"}
+        text2={"Upis je u toku!"}
       />
       <div className="container px-4 mx-auto space-y-8 py-10">
         <h2 className=" text-6xl text-primary text-center py-10 font-gagalin">
@@ -22,6 +23,22 @@ const page = () => {
           Uz rad sa stručnim osobljem Vasi mališani ce se zabavljati i
           napredovati razvijajući svoje lokomotorne sposobnosti
         </p>
+        <div className="flex justify-around ">
+          <Image
+            src={"/images/lucky-fitness (17).jpg"}
+            width={500}
+            height={500}
+            alt={"fitness za decu"}
+            className="w-[40%] object-cover h-auto rounded-xl"
+          />
+          <Image
+            src={"/images/lucky-fitness (21).jpg"}
+            width={500}
+            height={500}
+            alt={"fitness za decu"}
+            className="w-[40%] object-cover h-auto rounded-xl"
+          />
+        </div>
       </div>
     </div>
   );

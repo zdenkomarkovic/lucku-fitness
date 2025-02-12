@@ -34,9 +34,13 @@ const About = () => {
         pitanju. Sem <span className="font-bold">jakog</span> tela, treninzi
         doprinose i poboljšanju raspoloženja, jačanju volje i taj efekat se može
         preneti i na druge životne sfere. Lucky fitness je udruženje koje iza
-        sebe ima <span className="font-bold"></span> dugogodišnji rad i iskustvo
-        u vodjenju grupnih i individualnih treninga, kako kondicionih, tako i
-        terapeutskih.
+        sebe ima <span className="font-bold">dugogodišnji rad i iskustvo</span>u
+        vodjenju{" "}
+        <span className="font-bold">
+          grupnih i individualnih treninga, kako kondicionih, tako i
+          terapeutskih
+        </span>
+        .<span className="font-bold"></span>
       </p>
     </div>
   );

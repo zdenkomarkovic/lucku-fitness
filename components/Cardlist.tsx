@@ -26,11 +26,7 @@ const Cardlist = () => {
           <CircleX className="w-6 h-6" />
         </button>
       </div>
-      <div className="container px-2 md:px-4 mx-auto space-y-10">
-        <h2 className=" text-6xl text-primary text-center py-10 font-gagalin">
-          Lucky fitnes sa vama od 2012
-        </h2>
-        <p></p>
+      <div className="container px-2 md:px-4 mx-auto ">
         <div className=" flex flex-col gap-4 md:gap-6 overflow-hidden">
           {workList.map((item, index) => {
             return (

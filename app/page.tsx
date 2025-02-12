@@ -1,3 +1,4 @@
+import About from "@/components/About";
 import ButtonToTop from "@/components/ButtonToTop";
 import Cardlist from "@/components/Cardlist";
 import Hero2 from "@/components/heroOptions/Hero2";
@@ -14,6 +15,7 @@ export default function Home() {
         text={"Sa nama je trening zabava!"}
       />
       <ButtonToTop />
+      <About />
       <Cardlist />
       {/* <SmallCards /> */}
       <ImageCarusel />

@@ -187,4 +187,8 @@ export const imageData: ImageData[] = [
     id: 19,
     image: "/images/lucky-fitness (20).jpg",
   },
+  {
+    id: 20,
+    image: "/images/lucky-fitness (21).jpg",
+  },
 ];

@@ -1,9 +1,6 @@
 import { GiWeightLiftingUp } from "react-icons/gi";
-import { GiWeight } from "react-icons/gi";
 import { IoFitnessOutline } from "react-icons/io5";
-import { IoIosFitness } from "react-icons/io";
 import { MdOutlineSportsGymnastics } from "react-icons/md";
-import { GiGymBag } from "react-icons/gi";
 import { IoIosPeople } from "react-icons/io";
 import { IoIosPerson } from "react-icons/io";
 import { PiRocketLaunchBold } from "react-icons/pi";
@@ -15,8 +12,8 @@ export const navList = [
   },
 
   {
-    title: "Treninzi",
-    link: "/treninzi",
+    title: "Fitness za decu",
+    link: "/fitnesszadecu",
   },
   {
     title: "Kontakt",
@@ -63,7 +60,7 @@ export const workList = [
   },
   {
     id: 6,
-    title: "Aerobix",
+    title: "Aeromix",
     text: "Spoj aerobnih vežbi i funkcionalnog treninga za bolju kondiciju i oblikovanje tela! Povećaj izdržljivost, sagori kalorije i uživaj u energičnom ritmu vežbanja.",
     icon: PiRocketLaunchBold,
   },

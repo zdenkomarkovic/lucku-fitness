@@ -82,3 +82,12 @@ body {
     @apply bg-background text-foreground;
   }
 }
+
+.scrollToTopButton {
+  cursor: pointer;
+  opacity: 0;
+  transition: opacity 0.6s ease-in-out;
+}
+.scrollToTopButton.visible {
+  opacity: 1;
+}

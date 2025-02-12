@@ -5,9 +5,13 @@ import { motion } from "framer-motion";
 import Image from "@/node_modules/next/image";
 
 export default function BackgroundPaths({
-  title = "Lucky Fitness",
+  title,
+  img,
+  text,
 }: {
-  title?: string;
+  title: string;
+  img: string;
+  text: string;
 }) {
   const words = title.split(" ");
 
@@ -47,17 +51,17 @@ export default function BackgroundPaths({
           </h1>
           <div className=" text-left">
             <p className="pl-16 font-extrabold text-muted md:text-muted-foreground text-4xl md:text-5xl">
-              Sa nama je trening zabava!
+              {text}
             </p>
           </div>
         </motion.div>
-        <div>
+        <div className="absolute md:w-[40%] top-0 right-0">
           <Image
-            src={"/images/lucky-fitness (2).jpg"}
+            src={img}
             width={1000}
             height={800}
             alt={"lucky fitness"}
-            className="absolute md:relative top-0 right-0 left-0 z-0 w-full h-screen object-cover"
+            className=" md:relative  z-0 w-full h-screen object-cover"
           />
         </div>
       </div>

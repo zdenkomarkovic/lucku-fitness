@@ -4,12 +4,14 @@ import React from "react";
 import { workList } from "@/constants/index";
 import { motion } from "framer-motion";
 import { Card, CardHeader, CardTitle, CardContent } from "./ui/card";
+import Image from "@/node_modules/next/image";
+import raspored from "../public/images/raspored.jpg";
 
 const Cardlist = () => {
   return (
     <div className="py-20">
       <div className="container px-2 md:px-4 mx-auto space-y-10">
-        <h2 className="text-6xl text-primary text-center py-10 font-gagalin">
+        <h2 className=" text-6xl text-primary text-center py-10 font-gagalin">
           Lucky fitnes sa vama od 2012
         </h2>
         <p></p>
@@ -44,6 +46,30 @@ const Cardlist = () => {
               </motion.div>
             );
           })}
+          <motion.div
+            initial={{ x: 100, opacity: 0 }} // Naizmenično levo/desno
+            whileInView={{ x: 0, opacity: 1 }} // Animira se ka centru
+            transition={{ duration: 0.8, ease: "easeOut" }}
+            viewport={{ once: true }}
+            className={`flex justify-end w-full`}
+          >
+            <Card className="  w-full shadow-lg md:p-5">
+              <CardHeader>
+                <CardTitle className="font-gagalin flex gap-5 text-2xl md:text-5xl items-center mx-auto text-primary">
+                  Raspored
+                </CardTitle>
+              </CardHeader>
+              <CardContent className="">
+                <Image
+                  src={raspored}
+                  width={500}
+                  height={500}
+                  alt={"fitness"}
+                  className="w-full aspect-[16/8]"
+                />
+              </CardContent>
+            </Card>
+          </motion.div>
         </div>
       </div>
     </div>

@@ -69,10 +69,10 @@ export default function Footer() {
           </div>
           <div className="md:col-span-1 col-span-2 text-center text-primary">
             <h3 className="text-lg font-semibold mb-2 md:mb-4">
-              starter naslov
+              Lucky fitness
             </h3>
 
-            <p className=" font-bold ">starter poruka</p>
+            <p className=" font-bold ">Sa nama je trening zabava!</p>
           </div>
         </div>
         <div className="mt-5 pt-5 md:mt-8 md:pt-8 border-t border-muted-foreground/20 text-center text-muted-foreground">

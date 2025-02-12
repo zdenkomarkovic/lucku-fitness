@@ -2,12 +2,12 @@ import React from "react";
 
 const About = () => {
   return (
-    <div className="container px-4 mx-auto py-10 space-y-5">
+    <div className="container px-2 md:px-4 mx-auto py-7 md:py-12 space-y-5">
       {" "}
       <h2 className=" text-6xl text-primary text-center py-10 font-gagalin">
         Lucky fitnes sa vama od 2012
       </h2>
-      <p className=" first-letter:pl-6 text-xl md:text-3xl">
+      <p className=" first-letter:pl-6 text-lg md:text-3xl">
         Laki fitnes osnovan je 2012-te godine. Svojom raznovrsnom ponudom,
         visegodisnjim iskustvom i strucnjoscu, okupio je stotinjak redovnih
         clanova. Fitnes klub se nalazi na novoj atraktivnoj lokaciji, mirnoj i
@@ -23,7 +23,7 @@ const About = () => {
         pazljivo osmisljeni grupni treninzi: aerobik, pilates, mix fit, body
         power, rekreacija za starije, individualni treninzi....
       </p>
-      <p className=" first-letter:pl-6 text-xl md:text-3xl">
+      <p className=" first-letter:pl-6 text-lg md:text-3xl">
         Savremeni način života doveo je do sve većeg izazova po pitanju
         održavanja fizičkog zdravlja. Sedeći način života, sve češći rad od
         kuće, olakšani životni uslovi, sve je to skupa dovelo do pada spremnosti

@@ -11,7 +11,7 @@ import { CircleX } from "lucide-react";
 const Cardlist = () => {
   const [showImage, setShowImage] = useState(false);
   return (
-    <div className="py-20">
+    <div className="py-10">
       <div
         className={`z-50 bg-muted-foreground fixed w-full h-screen left-0 right-0 top-0 ${
           showImage ? "block " : "hidden"

@@ -8,7 +8,7 @@ const About = () => {
         Lucky fitnes sa vama od 2012
       </h2>
       <p className=" first-letter:pl-6 text-xl md:text-3xl">
-        Lucky fitnes osnovan je 2012-te godine. Svojom raznovrsnom ponudom,
+        Laki fitnes osnovan je 2012-te godine. Svojom raznovrsnom ponudom,
         visegodisnjim iskustvom i strucnjoscu, okupio je stotinjak redovnih
         clanova. Fitnes klub se nalazi na novoj atraktivnoj lokaciji, mirnoj i
         punoj zelenila, a opet u srcu Beograda, na Crvenom krstu. Termini se
@@ -31,11 +31,12 @@ const About = () => {
         zdravstvenih problema. Bolovi u ledjima, lako zamaranje, loše
         raspoloženje....su samo neke od posledica smanjenog fizičkog vežbanja.
         Naš cilj je da doprinesemo povećanoj svesti kada je fizička aktivnost u
-        pitanju. Sem "jakog" tela, treninzi doprinose i poboljšanju
-        raspoloženja, jačanju volje i taj efekat se može preneti i na druge
-        životne sfere. Lucky fitness je udruženje koje iza sebe ima dugogodišnji
-        rad i iskustvo u vodjenju grupnih i individualnih treninga, kako
-        kondicionih, tako i terapeutskih.
+        pitanju. Sem <span className="font-bold">jakog</span> tela, treninzi
+        doprinose i poboljšanju raspoloženja, jačanju volje i taj efekat se može
+        preneti i na druge životne sfere. Lucky fitness je udruženje koje iza
+        sebe ima <span className="font-bold"></span> dugogodišnji rad i iskustvo
+        u vodjenju grupnih i individualnih treninga, kako kondicionih, tako i
+        terapeutskih.
       </p>
     </div>
   );

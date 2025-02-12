@@ -55,15 +55,14 @@ export default function BackgroundPaths({
             </p>
           </div>
         </motion.div>
-        <div className="absolute md:w-[40%] top-0 right-0">
-          <Image
-            src={img}
-            width={1000}
-            height={800}
-            alt={"lucky fitness"}
-            className=" md:relative  z-0 w-full h-screen object-cover"
-          />
-        </div>
+
+        <Image
+          src={img}
+          width={1000}
+          height={800}
+          alt={"lucky fitness"}
+          className=" md:w-[42%] top-0 right-0 z-0 w-full h-screen object-cover"
+        />
       </div>
     </div>
   );

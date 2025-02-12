@@ -1,15 +1,31 @@
 "use client";
 
-import React from "react";
+import React, { useState } from "react";
 import { workList } from "@/constants/index";
 import { motion } from "framer-motion";
 import { Card, CardHeader, CardTitle, CardContent } from "./ui/card";
 import Image from "@/node_modules/next/image";
 import raspored from "../public/images/raspored.jpg";
+import { CircleX } from "lucide-react";
 
 const Cardlist = () => {
+  const [showImage, setShowImage] = useState(false);
   return (
     <div className="py-20">
+      <div
+        className={`z-50 bg-muted-foreground fixed w-full h-screen left-0 right-0 top-0 ${
+          showImage ? "block " : "hidden"
+        }`}
+      >
+        <Image src={raspored} alt="fitness" fill className="object-contain" />
+
+        <button
+          onClick={() => setShowImage(false)}
+          className="absolute right-2 top-10 transform -translate-y-1/2 bg-black/50 text-muted p-2 rounded-full"
+        >
+          <CircleX className="w-6 h-6" />
+        </button>
+      </div>
       <div className="container px-2 md:px-4 mx-auto space-y-10">
         <h2 className=" text-6xl text-primary text-center py-10 font-gagalin">
           Lucky fitnes sa vama od 2012
@@ -47,8 +63,8 @@ const Cardlist = () => {
             );
           })}
           <motion.div
-            initial={{ x: 100, opacity: 0 }} // Naizmenično levo/desno
-            whileInView={{ x: 0, opacity: 1 }} // Animira se ka centru
+            initial={{ x: -100, opacity: 0 }}
+            whileInView={{ x: 0, opacity: 1 }}
             transition={{ duration: 0.8, ease: "easeOut" }}
             viewport={{ once: true }}
             className={`flex justify-end w-full`}
@@ -61,6 +77,7 @@ const Cardlist = () => {
               </CardHeader>
               <CardContent className="">
                 <Image
+                  onClick={() => setShowImage(true)}
                   src={raspored}
                   width={500}
                   height={500}

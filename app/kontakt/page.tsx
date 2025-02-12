@@ -7,7 +7,6 @@ import { toast } from "sonner";
 import { FaInstagram } from "react-icons/fa";
 import { FaPhone } from "react-icons/fa6";
 import { FaViber } from "react-icons/fa";
-import { FaWhatsappSquare } from "react-icons/fa";
 import {
   Form,
   FormField,

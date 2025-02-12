@@ -47,7 +47,7 @@ export default function BackgroundPaths({
           </h1>
           <div className=" text-left">
             <p className="pl-16 font-extrabold text-muted md:text-muted-foreground text-4xl md:text-5xl">
-              Upis je u toku!
+              Sa nama je trening zabava!
             </p>
           </div>
         </motion.div>

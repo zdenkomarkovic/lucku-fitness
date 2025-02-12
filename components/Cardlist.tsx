@@ -9,7 +9,7 @@ const Cardlist = () => {
   return (
     <div className="py-20">
       <div className="container px-2 md:px-4 mx-auto space-y-10">
-        <h2 className="text-6xl text-primary text-center  font-gagalin">
+        <h2 className="text-6xl text-primary text-center py-10 font-gagalin">
           Lucky fitnes sa vama od 2012
         </h2>
         <p></p>

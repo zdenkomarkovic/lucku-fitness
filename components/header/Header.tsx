@@ -89,7 +89,7 @@ export default function Header() {
           : "bg-transparent"
       }  fixed top-0 left-0 right-0 z-50 transition-colors`}
     >
-      <nav className="flex items-center justify-between px-8 py-4 max-w-[80rem] w-full">
+      <nav className="flex items-center justify-between px-8 py-4 max-w-[80rem] w-full font-bold">
         <motion.div whileHover={{ scale: 1.1 }}>
           <Link href="/" className="">
             <Image

@@ -60,7 +60,7 @@ export const workList = [
   },
   {
     id: 6,
-    title: "Aeromix",
+    title: "Aerobik",
     text: "Spoj aerobnih vežbi i funkcionalnog treninga za bolju kondiciju i oblikovanje tela! Povećaj izdržljivost, sagori kalorije i uživaj u energičnom ritmu vežbanja.",
     icon: PiRocketLaunchBold,
   },

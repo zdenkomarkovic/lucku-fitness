@@ -223,6 +223,10 @@ export const imageData: ImageData[] = [
 ];
 
 export interface Individualni {
+  id: string;
+  title: string;
+  text: string;
+  icon: IconType;
   img: string;
   icon1: IconType;
   text1: string;
@@ -233,11 +237,15 @@ export interface Individualni {
 }
 
 export const individualni: Individualni = {
+  id: "individualni",
+  title: "Individualni treninzi",
+  text: "Ostvari maksimalne rezultate uz personalizovane treninge!",
+  icon: GiBiceps,
   img: "/individualni.jpg",
   icon1: GiBiceps,
   text1: "Radi se 1 na 1",
   icon2: ImPower,
-  text2: "Intenzitet prilagodjen vezbacu",
+  text2: "Prilagođen intenzitet",
   icon3: LuTimerReset,
   text3: "Trajanje 55 minuta",
 };

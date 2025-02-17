@@ -223,7 +223,7 @@ export const imageData: ImageData[] = [
 ];
 
 export interface Individualni {
-  id: string;
+  id: number;
   title: string;
   text: string;
   icon: IconType;
@@ -237,7 +237,7 @@ export interface Individualni {
 }
 
 export const individualni: Individualni = {
-  id: "individualni",
+  id: "1",
   title: "Individualni treninzi",
   text: "Ostvari maksimalne rezultate uz personalizovane treninge!",
   icon: GiBiceps,

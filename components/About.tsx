@@ -15,7 +15,8 @@ const About = () => {
         Laki fitnes osnovan je 2012-te godine. Svojom raznovrsnom ponudom,
         visegodisnjim iskustvom i strucnjoscu, okupio je stotinjak redovnih
         clanova. Fitnes klub se nalazi na novoj atraktivnoj lokaciji, mirnoj i
-        punoj zelenila, a opet u srcu Beograda, na Crvenom krstu.
+        punoj zelenila, a opet u srcu Beograda, na Crvenom krstu. Ulica Nikole
+        Stefanovica 9.
       </p>{" "}
       <div className={`space-y-5 ${showText ? "block" : "hidden"}`}>
         <p className=" first-letter:pl-6 text-lg md:text-3xl">

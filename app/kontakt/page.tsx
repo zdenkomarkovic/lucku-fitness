@@ -111,7 +111,7 @@ export default function Contact() {
                 <button className="hover:scale-110 transition-transform duration-500 px-4 md:px-8 flex gap-4 items-center">
                   {" "}
                   <Facebook className=" text-[28px] lg:text-[30px]" />
-                  LUCKY Fitnes grcica milenka 4b
+                  LUCKY Fitnes
                 </button>
               </a>
             </div>
@@ -208,7 +208,7 @@ export default function Contact() {
           </div>
         </div>
         <iframe
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6733.995358787032!2d20.480432449335265!3d44.795150261480295!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x475a7079447a2595%3A0x7edfdb68c808ddca!2sGr%C4%8Di%C4%87a%20Milenka%204b%2C%20Beograd%2011010!5e0!3m2!1sen!2srs!4v1739402166167!5m2!1sen!2srs"
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2831.38812303994!2d20.491663176708432!3d44.79327827795222!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x475a707de3962257%3A0x8955069c27eafb49!2sNikole%20Stefanovic%CC%81a%209%2C%20Beograd!5e0!3m2!1sen!2srs!4v1739813716479!5m2!1sen!2srs"
           width="600"
           height="450"
           style={{ border: "0" }}

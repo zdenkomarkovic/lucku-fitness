@@ -1,8 +1,7 @@
 import { GiWeightLiftingUp } from "react-icons/gi";
 import { IoFitnessOutline } from "react-icons/io5";
 import { MdOutlineSportsGymnastics } from "react-icons/md";
-import { IoIosPeople } from "react-icons/io";
-import { IoIosPerson } from "react-icons/io";
+
 import { PiRocketLaunchBold } from "react-icons/pi";
 
 export const navList = [
@@ -25,44 +24,43 @@ export interface WorkList {
   id: number;
   title: string;
   text: string;
+  img: string;
+  text2: string;
 }
 
 export const workList = [
   {
     id: 1,
-    title: "Grupni treninzi",
-    text: "Oblikuj svoje telo i poboljšaj kondiciju uz dinamične grupne treninge! Vežbaj u motivišućem okruženju, uz stručno vođstvo i podršku tima. Pridruži se i zajedno postižemo ciljeve!",
-    icon: IoIosPeople,
-  },
-  {
-    id: 2,
-    title: "Individualni treninzi",
-    text: "Ostvari maksimalne rezultate uz personalizovane individualne treninge! Treniraj prema svom tempu, uz stručnu podršku i plan prilagođen tvojim ciljevima. Fokus je na tebi!",
-    icon: IoIosPerson,
-  },
-  {
-    id: 3,
     title: "Pilates",
     text: "Poboljšaj fleksibilnost, snagu i držanje uz pilates treninge! Uz kontrolisane pokrete i fokus na disanje, oblikuj telo i oslobodi se stresa. Idealno za sve nivoe kondicije!",
     icon: IoFitnessOutline,
+    img: "/pilates.jpg",
+    text2: "Pilates, trening fleksibilnosti, nizak do umeren intenzitet",
   },
   {
-    id: 4,
+    id: 2,
     title: "Body power",
     text: "Ojačaj mišiće i poboljšaj izdržljivost uz intenzivan trening snage! Kombinacija tegova i funkcionalnih vežbi pomoći će ti da postigneš vrhunsku formu.",
     icon: GiWeightLiftingUp,
+    img: "/body power.jpg",
+    text2:
+      "Body power, trening visokog intenziteta, namenjen je ljudima koji su u formi",
   },
   {
-    id: 5,
+    id: 3,
     title: "Mix-fit",
     text: " Dinamičan spoj kardio i snage za maksimalne rezultate! Raznovrsni pokreti, visoka energija i zabavna atmosfera čine svaki trening izazovnim i efektivnim.",
     icon: MdOutlineSportsGymnastics,
+    img: "/mix fit.jpg",
+    text2: "Mix fit, trening srednjeg intenziteta, odlican za skidanje kilaze",
   },
   {
-    id: 6,
+    id: 4,
     title: "Aerobik",
     text: "Spoj aerobnih vežbi i funkcionalnog treninga za bolju kondiciju i oblikovanje tela! Povećaj izdržljivost, sagori kalorije i uživaj u energičnom ritmu vežbanja.",
     icon: PiRocketLaunchBold,
+    img: "/aerobik.jpg",
+    text2: "Aerobik trening srednjeg intenziteta",
   },
 ];
 
@@ -192,3 +190,16 @@ export const imageData: ImageData[] = [
     image: "/images/lucky-fitness (21).jpg",
   },
 ];
+
+export interface Individualni {
+  title: string;
+  img: string;
+  text2: string;
+}
+
+export const individualni: Individualni = {
+  title: "Individualni treninzi",
+  img: "/individualni.jpg",
+  text2:
+    "Individualni trening radi se 1 na 1, intenzitet treninga prilagodjava se svakom pojedincu.",
+};

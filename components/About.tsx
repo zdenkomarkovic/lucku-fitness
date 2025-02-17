@@ -55,7 +55,7 @@ const About = () => {
       </div>
       <p
         onClick={() => setShowText(true)}
-        className={`text-lg md:text-3xl text-right text-primary cursor-pointer ${
+        className={`text-lg md:text-3xl text-right text-primary cursor-pointer pr-10 ${
           showText ? "hidden" : "block"
         }`}
       >
@@ -63,7 +63,7 @@ const About = () => {
       </p>
       <p
         onClick={() => setShowText(false)}
-        className={`text-lg md:text-3xl text-right text-primary cursor-pointer ${
+        className={`text-lg md:text-3xl text-right text-primary cursor-pointer pr-10 ${
           showText ? "block" : "hidden"
         }`}
       >

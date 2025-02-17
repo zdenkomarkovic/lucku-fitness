@@ -237,7 +237,7 @@ export interface Individualni {
 }
 
 export const individualni: Individualni = {
-  id: "1",
+  id: 1,
   title: "Individualni treninzi",
   text: "Ostvari maksimalne rezultate uz personalizovane treninge!",
   icon: GiBiceps,

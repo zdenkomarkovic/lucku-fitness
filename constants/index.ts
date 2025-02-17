@@ -8,6 +8,7 @@ import { FiActivity } from "react-icons/fi";
 import { TbStretching } from "react-icons/tb";
 import { LuTimerReset } from "react-icons/lu";
 import { IconType } from "react-icons";
+import { GiBiceps } from "react-icons/gi";
 
 export const navList = [
   {
@@ -222,14 +223,21 @@ export const imageData: ImageData[] = [
 ];
 
 export interface Individualni {
-  title: string;
   img: string;
+  icon1: IconType;
+  text1: string;
+  icon2: IconType;
   text2: string;
+  icon3: IconType;
+  text3: string;
 }
 
 export const individualni: Individualni = {
-  title: "Individualni treninzi",
   img: "/individualni.jpg",
-  text2:
-    "Individualni trening radi se 1 na 1, intenzitet treninga prilagodjava se svakom pojedincu.",
+  icon1: GiBiceps,
+  text1: "Radi se 1 na 1",
+  icon2: ImPower,
+  text2: "Intenzitet prilagodjen vezbacu",
+  icon3: LuTimerReset,
+  text3: "Trajanje 55 minuta",
 };

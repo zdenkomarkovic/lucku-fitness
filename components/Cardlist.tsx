@@ -164,10 +164,10 @@ const Cardlist = () => {
                     src={individualni.img}
                     width={500}
                     height={500}
-                    alt={individualni.title}
+                    alt={"individualnui trening"}
                     className="w-full  object-cover aspect-square"
                   />
-                  <p className=" text-xl md:text-4xl">{individualni.text2}</p>
+                  <SmallCards item={individualni} />
                 </div>
 
                 <p

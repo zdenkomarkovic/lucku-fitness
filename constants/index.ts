@@ -1,8 +1,13 @@
 import { GiWeightLiftingUp } from "react-icons/gi";
 import { IoFitnessOutline } from "react-icons/io5";
 import { MdOutlineSportsGymnastics } from "react-icons/md";
-
 import { PiRocketLaunchBold } from "react-icons/pi";
+import { GiStrong } from "react-icons/gi";
+import { ImPower } from "react-icons/im";
+import { FiActivity } from "react-icons/fi";
+import { TbStretching } from "react-icons/tb";
+import { LuTimerReset } from "react-icons/lu";
+import { IconType } from "react-icons";
 
 export const navList = [
   {
@@ -24,18 +29,29 @@ export interface WorkList {
   id: number;
   title: string;
   text: string;
+  icon: IconType;
   img: string;
+  text1: string;
+  icon1: IconType;
   text2: string;
+  icon2: IconType;
+  text3: string;
+  icon3: IconType;
 }
 
-export const workList = [
+export const workList: WorkList[] = [
   {
     id: 1,
     title: "Pilates",
     text: "Poboljšaj fleksibilnost, snagu i držanje uz pilates treninge! Uz kontrolisane pokrete i fokus na disanje, oblikuj telo i oslobodi se stresa. Idealno za sve nivoe kondicije!",
     icon: IoFitnessOutline,
     img: "/pilates.jpg",
-    text2: "Pilates, trening fleksibilnosti, nizak do umeren intenzitet",
+    icon1: TbStretching,
+    text1: "Trening fleksibilnosti",
+    icon2: ImPower,
+    text2: "Nizi umeren intenzitet",
+    icon3: LuTimerReset,
+    text3: "Trajanje 55 minuta",
   },
   {
     id: 2,
@@ -43,8 +59,12 @@ export const workList = [
     text: "Ojačaj mišiće i poboljšaj izdržljivost uz intenzivan trening snage! Kombinacija tegova i funkcionalnih vežbi pomoći će ti da postigneš vrhunsku formu.",
     icon: GiWeightLiftingUp,
     img: "/body power.jpg",
-    text2:
-      "Body power, trening visokog intenziteta, namenjen je ljudima koji su u formi",
+    icon1: GiStrong,
+    text1: "Za ljude u formi",
+    icon2: ImPower,
+    text2: "Visoki intenzitet",
+    icon3: LuTimerReset,
+    text3: "Trajanje 55 minuta",
   },
   {
     id: 3,
@@ -52,7 +72,12 @@ export const workList = [
     text: " Dinamičan spoj kardio i snage za maksimalne rezultate! Raznovrsni pokreti, visoka energija i zabavna atmosfera čine svaki trening izazovnim i efektivnim.",
     icon: MdOutlineSportsGymnastics,
     img: "/mix fit.jpg",
-    text2: "Mix fit, trening srednjeg intenziteta, odlican za skidanje kilaze",
+    icon1: FiActivity,
+    text1: "Za skidanje kilaze",
+    icon2: ImPower,
+    text2: "Srednji intenzitet",
+    icon3: LuTimerReset,
+    text3: "Trajanje 55 minuta",
   },
   {
     id: 4,
@@ -60,7 +85,12 @@ export const workList = [
     text: "Spoj aerobnih vežbi i funkcionalnog treninga za bolju kondiciju i oblikovanje tela! Povećaj izdržljivost, sagori kalorije i uživaj u energičnom ritmu vežbanja.",
     icon: PiRocketLaunchBold,
     img: "/aerobik.jpg",
-    text2: "Aerobik trening srednjeg intenziteta",
+    icon1: TbStretching,
+    text1: "Aerobne vezbe",
+    icon2: ImPower,
+    text2: "Srednji intenzitet",
+    icon3: LuTimerReset,
+    text3: "Trajanje 55 minuta",
   },
 ];
 

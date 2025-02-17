@@ -9,6 +9,7 @@ import raspored from "../public/images/raspored.jpg";
 import { CircleX } from "lucide-react";
 import { IoIosPeople } from "react-icons/io";
 import { IoIosPerson } from "react-icons/io";
+import SmallCards from "./SmallCards";
 
 const Cardlist = () => {
   const [showImage, setShowImage] = useState(false);
@@ -119,7 +120,7 @@ const Cardlist = () => {
                             alt={item.title}
                             className="w-full object-cover aspect-square"
                           />
-                          <p className=" text-xl md:text-4xl">{item.text2}</p>
+                          <SmallCards item={item} />
                         </div>
                       )}
 

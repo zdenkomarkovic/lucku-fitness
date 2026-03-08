@@ -100,12 +100,12 @@ const page = () => {
         <section className="space-y-6">
           <div className="bg-primary/10 rounded-2xl p-8 text-center space-y-6">
             <blockquote className="text-2xl md:text-3xl font-semibold italic">
-              „Želja pokreće. Moć usporava, ubrzava, menja pravac. Igra postoji
-              samo dok su oboje prisutni."
+              &bdquo;Želja pokreće. Moć usporava, ubrzava, menja pravac. Igra postoji
+              samo dok su oboje prisutni.&ldquo;
             </blockquote>
             <blockquote className="text-2xl md:text-3xl font-semibold italic">
-              „I najvažnije – shvate da scena ne živi u tekstu, nego između
-              dvoje ljudi."
+              &bdquo;I najvažnije – shvate da scena ne živi u tekstu, nego između
+              dvoje ljudi.&ldquo;
             </blockquote>
             <p className="text-xl md:text-2xl">
               Uče da scena nije mesto gde si sam, već gde zajedno{" "}

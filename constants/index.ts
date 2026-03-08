@@ -15,10 +15,9 @@ export const navList = [
     title: "Početna",
     link: "/",
   },
-
   {
-    title: "Fitness za decu",
-    link: "/fitnesszadecu",
+    title: "Škola glume",
+    link: "/skolaglume",
   },
   {
     title: "Kontakt",

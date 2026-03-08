@@ -9,11 +9,13 @@ export default function BackgroundPaths({
   img,
   text,
   text2,
+  hideTextOnMobile,
 }: {
   title: string;
   img: string;
   text?: string;
   text2?: string;
+  hideTextOnMobile?: boolean;
 }) {
   const words = title.split(" ");
 
@@ -52,12 +54,12 @@ export default function BackgroundPaths({
                 </span>
               ))}
             </h1>
-            <div className=" text-left">
+            <div className={`text-left${hideTextOnMobile ? " hidden md:block" : ""}`}>
               <p className="pl-16 font-extrabold text-muted md:text-muted-foreground text-4xl md:text-5xl">
                 {text}
               </p>
             </div>
-            <div className=" text-left">
+            <div className={`text-left${hideTextOnMobile ? " hidden md:block" : ""}`}>
               <p className="pl-16 font-extrabold text-muted-foreground text-4xl md:text-5xl">
                 {text2}
               </p>

@@ -5,7 +5,8 @@ import { individualni, workList } from "@/constants/index";
 import { motion } from "framer-motion";
 import { Card, CardHeader, CardTitle, CardContent } from "./ui/card";
 import Image from "@/node_modules/next/image";
-import raspored from "../public/images/raspored.jpg";
+import raspored from "../public/images/raspored.png";
+import akcija from "../public/images/1.png";
 import { CircleX } from "lucide-react";
 import { IoIosPeople } from "react-icons/io";
 import { IoIosPerson } from "react-icons/io";
@@ -207,6 +208,32 @@ const Cardlist = () => {
                 <Image
                   onClick={() => setShowImage(true)}
                   src={raspored}
+                  width={500}
+                  height={500}
+                  alt={"fitness"}
+                  className="w-full aspect-[16/8]"
+                />
+              </CardContent>
+            </Card>
+          </motion.div>
+          <motion.div
+            initial={{ x: -100, opacity: 0 }}
+            whileInView={{ x: 0, opacity: 1 }}
+            transition={{ duration: 0.8, ease: "easeOut" }}
+            viewport={{ once: true }}
+            className={`flex justify-end w-full`}
+          >
+            <Card className="  w-full shadow-lg md:p-5">
+              <CardHeader>
+                <CardTitle className="font-gagalin flex gap-5 text-2xl md:text-5xl items-center mx-auto text-primary">
+                  Akcija
+                </CardTitle>
+              </CardHeader>
+
+              <CardContent className="">
+                <Image
+                  onClick={() => setShowImage(true)}
+                  src={akcija}
                   width={500}
                   height={500}
                   alt={"fitness"}
